@@ -5,7 +5,7 @@
     "district": "Akwa",
     "specialty": "Ndolé aux crevettes",
     "image": "/images/ndole-crevettes.jpg",
-    "headerImage": "/images/calao-dore.jpg"
+    "headerImage": "/images/calao-dore.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "district": "Bonapriso",
     "specialty": "Eru aux pieds de bœuf",
     "image": "/images/eru-pieds-boeuf.jpg",
-    "headerImage": "/images/ngono.jpg"
+    "headerImage": "/images/ngono.webp"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "district": "Bonanjo",
     "specialty": "Poulet DG",
     "image": "/images/poulet-dg.jpg",
-    "headerImage": "/images/fourchette.jpg"
+    "headerImage": "/images/fourchette.webp"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "district": "Bonamoussadi",
     "specialty": "Poisson braisé",
     "image": "/images/poisson-braise.jpg",
-    "headerImage": "/images/saveurs.jpg"
+    "headerImage": "/images/saveurs.webp"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "district": "Akwa",
     "specialty": "Bobolo et sauce arachide",
     "image": "/images/bobolo-sauce-arachide.jpg",
-    "headerImage": "/images/akwa.jpg"
+    "headerImage": "/images/akwa.webp"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "district": "Bali",
     "specialty": "Koki et plantain",
     "image": "/images/koki-plantain.jpg",
-    "headerImage": "/images/royal.jpg"
+    "headerImage": "/images/royal.webp"
   }
 ]

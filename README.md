@@ -9,7 +9,8 @@
 ---
 
 ## 🚀 Live Demo
-👉 https://delices-de-douala-tp-pink.vercel.app/
+V1 👉  https://delices-de-douala-tp-pink.vercel.app/
+V2 👉  https://delices-de-douala-http-notation.vercel.app/
 
 ---
 
@@ -96,14 +97,14 @@ src/
 ## 📸 Screenshots
 
 ### 🏠 Page d'accueil
-![Home](src/assets/screenshots/home.png)
+![Home](src/assets/screenshots/home.webp)
 
 ### 🍽️ Liste restaurant
-![List](src/assets/screenshots/restaurant-list.png)
+![List](src/assets/screenshots/restaurant-list.webp)
 
 ### ⭐ Notation
-![Rating](src/assets/screenshots/notation-1.png)
-![Rating](src/assets/screenshots/notation-2.png)
+![Rating](src/assets/screenshots/notation-1.webp)
+![Rating](src/assets/screenshots/notation-2.webp)
 
 ---
 
