@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Le Calao Doré",
+    "district": "Akwa",
+    "specialty": "Ndolé aux crevettes",
+    "image": "/images/ndole-crevettes.webp",
+    "headerImage": "/images/calao-dore.webp"
+  },
+  {
+    "id": 2,
+    "name": "Chez Madame Ngono",
+    "district": "Bonapriso",
+    "specialty": "Eru aux pieds de bœuf",
+    "image": "/images/eru-pieds-boeuf.webp",
+    "headerImage": "/images/ngono.webp"
+  },
+  {
+    "id": 3,
+    "name": "La Fourchette Camerounaise",
+    "district": "Bonanjo",
+    "specialty": "Poulet DG",
+    "image": "/images/poulet-dg.webp",
+    "headerImage": "/images/fourchette.webp"
+  },
+  {
+    "id": 4,
+    "name": "Saveurs du Wouri",
+    "district": "Bonamoussadi",
+    "specialty": "Poisson braisé",
+    "image": "/images/poisson-braise.webp",
+    "headerImage": "/images/saveurs.webp"
+  },
+  {
+    "id": 5,
+    "name": "L'Akwa Gourmand",
+    "district": "Akwa",
+    "specialty": "Bobolo et sauce arachide",
+    "image": "/images/bobolo-sauce-arachide.webp",
+    "headerImage": "/images/akwa.webp"
+  },
+  {
+    "id": 6,
+    "name": "Le Royal de Bali",
+    "district": "Bali",
+    "specialty": "Koki et plantain",
+    "image": "/images/koki-plantain.webp",
+    "headerImage": "/images/royal.webp"
+  }
+]

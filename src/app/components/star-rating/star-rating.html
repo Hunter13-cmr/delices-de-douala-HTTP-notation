@@ -8,8 +8,12 @@
       (mouseenter)="hoverRating.set(star)"
       (mouseleave)="hoverRating.set(0)"
       (click)="rate(star)">
+      @if (star <= (hoverRating() || currentRating())) {
+        <app-icon name="star" size="32"></app-icon>
+      } @else {
+        <app-icon name="star-outline" size="32"></app-icon>
+      }
 
-      ★
 
     </span>
 

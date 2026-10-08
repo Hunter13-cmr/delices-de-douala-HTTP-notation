@@ -2,6 +2,7 @@ import { Component, computed, inject, signal } from '@angular/core';
 
 import { HeaderComponent } from '../header/header';
 import { RestaurantListComponent } from '../restaurant-list/restaurant-list';
+import { IconComponent } from '../../shared/icon.component';
 
 import { RestaurantService } from '../../services/restaurant.service';
 import { RatingService } from '../../services/rating.service';
@@ -12,6 +13,7 @@ import { RatingService } from '../../services/rating.service';
   imports: [
     HeaderComponent,
     RestaurantListComponent,
+    IconComponent,
   ],
   templateUrl: './home.html',
   styleUrl: './home.css',

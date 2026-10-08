@@ -16,6 +16,7 @@ import { RestaurantService } from '../../services/restaurant.service';
 import { RatingService } from '../../services/rating.service';
 import { environment } from '../../../environments/environment';
 import { Plat } from '../../models/plat';
+import { IconComponent } from '../../shared/icon.component';
 
 /**
  * CarteDuJourComponent - Affiche le menu d'un restaurant spécifique
@@ -31,7 +32,7 @@ import { Plat } from '../../models/plat';
 @Component({
   selector: 'app-carte-du-jour',
   standalone: true,
-  imports: [CurrencyPipe, RouterLink, FormsModule],
+  imports: [CurrencyPipe, RouterLink, FormsModule, IconComponent],
   templateUrl: './carte-du-jour.html',
   styleUrl: './carte-du-jour.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -173,5 +174,15 @@ export class CarteDuJourComponent {
       'plat-indisponible': !plat.disponible,
       'plat-disponible': plat.disponible,
     };
+  }
+
+  /**
+   * Image de secours si un visuel est manquant
+   */
+  onImageError(event: Event) {
+    const img = event.target as HTMLImageElement | null;
+    if (img && !img.src.endsWith('/images/restaurant.webp')) {
+      img.src = '/images/restaurant.webp';
+    }
   }
 }

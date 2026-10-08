@@ -1,0 +1,15 @@
+export default `<!doctype html>
+<html lang="fr" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>Délices de Douala — Restaurant &amp; Table</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Délices de Douala : le restaurant gastronomique de Douala. Découvrez notre menu de la semaine, les plats du moment et réservez votre table en ligne.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23E07A4F'/%3E%3Cpath d='M16 12c3 0 5 1 5 3 0 2-3 3-3 3s-3-1-3-3c0-2 2-3 5-3z' fill='%23FBF6EF'/%3E%3Cpath d='M16 8c4 0 6 1 6 3 0 2-4 3-4 3s-4-1-4-3c0-2 2-3 6-3z' fill='%23FBF6EF'/%3E%3C/svg%3E">
+<style>:root{--color-bg:#FBF6EF;--color-bg-secondary:#F3EBE2;--color-bg-elevated:#FFFFFF;--color-bg-card:#FFFFFF;--color-bg-card-hover:#FFFFFF;--color-text:#3A2E2A;--color-text-secondary:#6E5D54;--color-text-muted:#9B8A80;--color-border:#E8DED4;--color-primary:#E07A4F;--color-primary-dark:#C25A33;--color-primary-light:#F7D9CE;--color-gold:#E8A33D;--color-green:#4A7C59;--color-green-dark:#376045;--color-dark:#24243A;--color-darker:#16162B;--gradient-primary:linear-gradient(135deg, #E07A4F 0%, #C25A33 100%);--gradient-gold:linear-gradient(135deg, #E8A33D 0%, #B87A1E 100%);--gradient-hero:linear-gradient(135deg, #E07A4F 0%, #C25A33 60%, #16162B 100%);--shadow-sm:0 1px 3px rgba(36, 36, 58, .08);--shadow-md:0 6px 18px rgba(36, 36, 58, .1);--shadow-lg:0 16px 44px rgba(36, 36, 58, .14);--shadow-glow:0 0 0 3px rgba(224, 122, 79, .25);--radius-sm:10px;--radius-md:14px;--radius-lg:20px;--radius-xl:28px;--font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;--font-serif:Georgia, "Times New Roman", serif;--space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--ease-out:cubic-bezier(.16, 1, .3, 1);--ease-in-out:cubic-bezier(.65, 0, .35, 1);--duration:.2s;--z-dropdown:100;--z-fixed:200;--container-max:1280px}*,*:before,*:after{box-sizing:border-box}*{margin:0}html,body{width:100%;min-height:100vh;font-family:var(--font-sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:var(--bg-primary);color:var(--color-text);transition:background .4s ease,color .4s ease}html{scroll-behavior:smooth}body{display:flex;flex-direction:column}app-root{width:100%;min-height:100vh;display:flex;flex-direction:column}</style><link rel="stylesheet" href="styles-IAZIXC4U.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-IAZIXC4U.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="main-TW2DS3JO.js" type="module"></script></body>
+</html>
+`;

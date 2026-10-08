@@ -13,13 +13,21 @@
           />
         }
         <div class="restaurant-info">
-          <h1 class="title">🍽️ {{ restaurant()!.name }}</h1>
-          <p class="district">📍 {{ restaurant()!.district }}</p>
+          <h1 class="title"><app-icon name="cutlery"></app-icon> {{ restaurant()!.name }}</h1>
+          <p class="district"><app-icon name="location"></app-icon> {{ restaurant()!.district }}</p>
           <p class="specialty">Spécialité : {{ restaurant()!.specialty }}</p>
 
           @if (restaurantRating() > 0) {
             <div class="rating-display">
-              <span class="stars-display">{{ '⭐'.repeat(restaurantRatingRounded()) }}</span>
+              <span class="stars-display">
+                @for (i of [1,2,3,4,5]; track i) {
+                  @if (i <= restaurantRatingRounded()) {
+                    <app-icon name="star" size="22"></app-icon>
+                  } @else {
+                    <app-icon name="star-outline" size="22"></app-icon>
+                  }
+                }
+              </span>
               <span class="rating-text">Note moyenne : {{ restaurantRating() }}/5</span>
             </div>
           } @else {
@@ -36,7 +44,7 @@
   <!-- Plat du jour en évidence -->
   @if (platDuJour()) {
     <section class="plat-du-jour">
-      <div class="plat-du-jour-badge">⭐ Plat du jour</div>
+      <div class="plat-du-jour-badge"><app-icon name="star"></app-icon> Plat du jour</div>
       <div class="plat-du-jour-content">
         @if (platDuJour()!.image) {
           <img
@@ -64,7 +72,7 @@
     <div class="search-box">
       <input
         type="text"
-        placeholder="🔍 Chercher un plat..."
+        placeholder="Chercher un plat..."
         [ngModel]="searchQuery()"
         (ngModelChange)="searchQuery.set($event)"
         class="search-input"
@@ -88,7 +96,7 @@
         (click)="resetFilters()"
         class="reset-btn"
       >
-        🔄 Réinitialiser
+        <app-icon name="refresh"></app-icon> Réinitialiser
       </button>
     }
   </section>
@@ -104,11 +112,11 @@
   <!-- État d'erreur -->
   @else if (menu.error()) {
     <section class="error-state">
-      <div class="error-icon">⚠️</div>
+      <div class="error-icon"><app-icon name="alert"></app-icon></div>
       <h2>Impossible de charger le menu</h2>
       <p>Erreur lors de la connexion au serveur.</p>
       <button (click)="menu.reload()" class="retry-btn">
-        🔄 Réessayer
+        <app-icon name="refresh"></app-icon> Réessayer
       </button>
     </section>
   }
@@ -117,10 +125,10 @@
   @else {
     <!-- Compteur et statistiques -->
     <div class="stats-bar">
-      <span class="stat">📊 {{ platCount() }} plat(s) trouvé(s)</span>
+      <span class="stat"><app-icon name="sparkle"></app-icon> {{ platCount() }} plat(s) trouvé(s)</span>
       @if (platIndisponiblesCount() > 0) {
         <span class="stat unavailable-stat">
-          ⭕ {{ platIndisponiblesCount() }} indisponible(s)
+          <app-icon name="cross"></app-icon> {{ platIndisponiblesCount() }} indisponible(s)
         </span>
       }
     </div>
@@ -128,11 +136,11 @@
     <!-- Liste vide -->
     @if (platsFiltres().length === 0) {
       <section class="empty-state">
-        <div class="empty-icon">🔍</div>
+        <div class="empty-icon"><app-icon name="search" size="48"></app-icon></div>
         <h2>Aucun plat ne correspond à votre recherche</h2>
         <p>Essayez de modifier vos filtres ou votre recherche.</p>
         <button (click)="resetFilters()" class="reset-btn">
-          🔄 Réinitialiser les filtres
+          <app-icon name="refresh"></app-icon> Réinitialiser les filtres
         </button>
       </section>
     }
@@ -155,6 +163,8 @@
                 [src]="plat.image"
                 [alt]="plat.nom"
                 class="plat-image"
+                loading="lazy"
+                (error)="onImageError($event)"
               />
             </div>
           }

@@ -1,0 +1,31 @@
+> Building...
+√ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size | Estimated transfer size
+main-TW2DS3JO.js     | main             | 370.53 kB |                98.99 kB
+styles-IAZIXC4U.css  | styles           |   4.16 kB |                 1.32 kB
+
+                     | Initial total    | 374.69 kB |               100.31 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+server.mjs           | server           | 818.44 kB |                        
+main.server.mjs      | main.server      | 809.42 kB |                        
+polyfills.server.mjs | polyfills.server | 233.65 kB |                        
+chunk-ITOR7NUX.mjs   | -                |   1.38 kB |                        
+chunk-KYQQYI4M.mjs   | -                |   1.01 kB |                        
+
+Lazy chunk files     | Names            |  Raw size
+chunk-6FE3IQVI.mjs   | xhr2             |  12.17 kB |                        
+chunk-24PUT7BK.mjs   | xhr2             |  12.07 kB |                        
+
+Prerendered 1 static route.
+Application bundle generation complete. [106.214 seconds] - 2026-10-08T13:25:12.530Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1msrc/app/components/carte-du-jour/carte-du-jour.css exceeded maximum budget. Budget 8.00 kB was not met by 746 bytes with a total of 8.75 kB.[0m
+
+
+Output location: c:\Users\USER\Desktop\Angular Talent Lab 2026\Semaine 3\Jour 5\delice-tp ok\dist\delices-tp
+
+EXIT=0 

@@ -1,8 +1,10 @@
 import { Component, computed, input, output, signal } from '@angular/core';
+import { IconComponent } from '../../shared/icon.component';
 
 @Component({
   selector: 'app-star-rating',
   standalone: true,
+  imports: [IconComponent],
   templateUrl: './star-rating.html',
   styleUrl: './star-rating.css'
 })
@@ -22,11 +24,11 @@ export class StarRatingComponent {
 
     switch (this.hoverRating()) {
 
-      case 1: return "😖 À éviter";
-      case 2: return "😕 Peut mieux faire";
-      case 3: return "🙂 Bon restaurant";
-      case 4: return "😋 Très bonne adresse";
-      case 5: return "👑 Une adresse incontournable";
+      case 1: return "À éviter";
+      case 2: return "Peut mieux faire";
+      case 3: return "Bon restaurant";
+      case 4: return "Très bonne adresse";
+      case 5: return "Une adresse incontournable";
       default: return "";
 
     }
@@ -39,11 +41,11 @@ export class StarRatingComponent {
 
     const messages = [
       "",
-      "💬 Merci pour votre franchise !",
-      "📝 Merci, votre avis aidera les autres clients.",
-      "👍 Merci pour votre retour !",
-      "😊 Merci ! Vous recommandez ce restaurant.",
-      "🎉 Merci ! Vous le recommandez vivement."
+      "Merci pour votre franchise !",
+      "Merci, votre avis aidera les autres clients.",
+      "Merci pour votre retour !",
+      "Merci ! Vous recommande ce restaurant.",
+      "Merci ! Vous le recommandez vivement."
     ];
 
     this.thanksMessage.set(messages[rating]);

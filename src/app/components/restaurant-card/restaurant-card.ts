@@ -2,11 +2,12 @@ import { Component, input, output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Restaurant } from '../../models/restaurant';
 import { StarRatingComponent } from '../star-rating/star-rating';
+import { IconComponent } from '../../shared/icon.component';
 
 @Component({
   selector: 'app-restaurant-card',
   standalone: true,
-  imports: [StarRatingComponent, RouterLink],
+  imports: [StarRatingComponent, RouterLink, IconComponent],
   templateUrl: './restaurant-card.html',
   styleUrl: './restaurant-card.css'
 })
@@ -28,6 +29,18 @@ export class RestaurantCardComponent {
       rating
 
     });
+
+  }
+
+  onImageError(event: Event){
+
+    const img = event.target as HTMLImageElement | null;
+
+    if(img && !img.src.endsWith('/images/restaurant.webp')){
+
+      img.src = '/images/restaurant.webp';
+
+    }
 
   }
 
