@@ -10,6 +10,8 @@
             [src]="restaurant()!.image"
             [alt]="restaurant()!.name"
             class="restaurant-image"
+            loading="lazy"
+            (error)="onImageError($event)"
           />
         }
         <div class="restaurant-info">
