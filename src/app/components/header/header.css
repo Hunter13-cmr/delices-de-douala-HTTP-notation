@@ -50,6 +50,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  color: #fff;
 }
 
 .header h1 app-icon {
@@ -107,15 +108,22 @@
 
 /* Note moyenne avec couleur frappante */
 .stat-card:last-child h3 {
-  background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcb77, #4d96ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
   font-size: 34px;
   font-weight: 900;
   text-shadow: none;
   filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.5));
   animation: ratingGlow 2s ease-in-out infinite alternate;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .stat-card:last-child h3 {
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcb77, #4d96ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 @keyframes ratingGlow {
