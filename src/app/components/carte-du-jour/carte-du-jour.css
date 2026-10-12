@@ -111,6 +111,7 @@
   font-size: clamp(1.5rem, 3.5vw, 1.8rem);
   font-weight: 800;
   margin-bottom: 0.4rem;
+  color: #fff;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -563,6 +564,22 @@
 
 
 @media (max-width: 768px) {
+  .restaurant-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .restaurant-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .restaurant-info {
+    width: 100%;
+  }
+
   .title {
     font-size: 1.5rem;
   }
