@@ -1,5 +1,5 @@
 ﻿/* ============================================
-   Délices de Douala �€” Design System (Expert)
+   Délices de Douala �€” Design System (Expert)
    ============================================ */
 
 :root {
@@ -9,6 +9,11 @@
   --color-bg-elevated: #FFFFFF;
   --color-bg-card: #FFFFFF;
   --color-bg-card-hover: #FFFFFF;
+  --bg-primary: #FBF6EF;
+  --bg-secondary: #F3EBE2;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFFFFF;
   --color-text: #3A2E2A;
   --color-text-secondary: #6E5D54;
   --color-text-muted: #9B8A80;
@@ -69,7 +74,7 @@
 }
 
 /* =====================
-   TH�ˆME SOMBRE
+   TH�ˆME SOMBRE
    ===================== */
 [data-theme="dark"] {
   --bg-primary: #16162B;
@@ -215,7 +220,7 @@ a:hover {
 }
 
 .app-footer::before {
-  content: "�Ÿ��";
+  content: "�Ÿ��";
   display: block;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
@@ -244,7 +249,7 @@ a:hover {
 }
 
 /* =====================
-   TH�ˆME + TOGGLE
+   TH�ˆME + TOGGLE
    ===================== */
 .theme-toggle {
   position: fixed;
