@@ -8,8 +8,25 @@
 [![Démo](https://img.shields.io/badge/D%C3%A9mo-Studio_Pr%C3%A9sentation-blue)](https://hunter13-cmr.github.io/delices-de-douala-HTTP-notation/)
 [![API](https://img.shields.io/badge/API-REST_public-FFC107?logo=none)]
 
-> Application Angular 22 (standalone, Signals, SSR optionnel) qui présente les restaurants de Douala avec un design premium : mode sombre, icônes SVG, notation interactive et « carte du jour » factice.  
-> Les captures d'écran et `dist/` sont signalés en fin de document.
+> Application Angular 22 (standalone, Signals, SSR optionnel) qui présente les restaurants de Douala avec un design premium : mode sombre, icônes SVG, notation interactive et « carte du jour » factice.
+
+## 🌐 Site déployé
+
+🔗 **https://delices-de-douala-http-notation.vercel.app/** (hébergé sur Vercel)
+
+## 📸 Captures d'écran
+
+| Accueil | Menu |
+| --- | --- |
+| ![Accueil](https://raw.githubusercontent.com/Hunter13-cmr/delices-de-douala-HTTP-notation/main/src/assets/screenshots/Home-header.webp) | ![Menu](https://raw.githubusercontent.com/Hunter13-cmr/delices-de-douala-HTTP-notation/main/src/assets/screenshots/Liste-menu.webp) |
+
+| Recherche | En-tête Restaurant |
+| --- | --- |
+| ![Recherche](https://raw.githubusercontent.com/Hunter13-cmr/delices-de-douala-HTTP-notation/main/src/assets/screenshots/Recherche-menu.webp) | ![En-tête Restaurant](https://raw.githubusercontent.com/Hunter13-cmr/delices-de-douala-HTTP-notation/main/src/assets/screenshots/Restaurant-header.webp) |
+
+| Carte Restaurant |
+| --- |
+| ![Carte Restaurant](https://raw.githubusercontent.com/Hunter13-cmr/delices-de-douala-HTTP-notation/main/src/assets/screenshots/carte-restaurant.webp) |
 
 ## Sommaire
 
@@ -178,11 +195,12 @@ Le serveur écoute le port défini par la variable `PORT`, ou `4000` par défaut
 
 ## Auteur & licence
 
-Projet académique `delices-tp` (Angular Talent Lab 2026, Semaine 3, Jour 5). Le sujet de travail est `TP_Jour8_Delices_Douala_Sujet.pdf` et n'est pas modifié. Le site est publié sur GitHub Pages à l'adresse https://hunter13-cmr.github.io/delices-de-douala-HTTP-notation/.
+Projet académique `delices-tp` (Angular Talent Lab 2026, Semaine 3, Jour 5). Le sujet de travail est `TP_Jour8_Delices_Douala_Sujet.pdf` et n'est pas modifié. Le site est déployé sur **Vercel** à l'adresse https://delices-de-douala-http-notation.vercel.app/.
 
 ## Feuille de route
 
-- Valider et remplacer les captures d'écran (`src/assets/screenshots/`) par des captures réelles corrigées.
-- Finaliser `dist/`, les budgets et la publication sur GitHub Pages.
+- ✅ Captures d'écran du site intégrées (`src/assets/screenshots/`).
+- ✅ Site terminé et déployé en production sur Vercel : https://delices-de-douala-http-notation.vercel.app/.
+- ✅ Publication du code source sur GitHub.
 - Poursuivre l'hébergement et l'accessibilité du site.
 
