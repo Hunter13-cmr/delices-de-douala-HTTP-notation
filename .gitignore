@@ -1,16 +1,14 @@
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-
-# Logs & caches
-build.log
-*.log
-
-# Temp files
-*.ps1
-
-# OS / editor
-.DS_Store
-Thumbs.db
+# Dependencies 
+ 
+# Build output 
+# Logs 
+*.log 
+ 
+*.tmp 
+ 
+.DS_Store 
+.env 
+.angular/cache/ 
+.vscode/ 
+ 
+ 
